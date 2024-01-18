@@ -1,3 +1,20 @@
+
+
+// <-------------------PAGE LOADER------------------->
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Simulate loading time (you can remove this in a real scenario)
+    setTimeout(function () {
+        // Hide the loader
+        document.getElementById("loader-wrapper").style.display = "none";
+        // Show the content
+        document.getElementById("content").style.display = "block";
+    }, 10000); // Adjust the time as needed
+});
+
+
+
+
 function locomotive() {
   gsap.registerPlugin(ScrollTrigger);
 
